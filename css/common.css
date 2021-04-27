@@ -1,0 +1,143 @@
+body {
+  color: #fff;
+  line-height: 1.5;
+  font-size: 14px;
+  font-family: 'PingFangSC-Regular', 'helvetica neue', tahoma, 'PingFang SC', 'microsoft yahei', arial, 'hiragino sans gb', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.w {
+  width: 1200px;
+  margin: 0 auto;
+}
+.logo_hover {
+  background-image: url(../img/menu_logo_hover.png) !important;
+  background-size: contain;
+}
+.head-color {
+  color: #2b2e2e !important;
+}
+.head-rotate {
+  transform: rotateY(90deg);
+}
+@font-face {
+  font-family: 'TencentSansw3';
+  src: url('../fonts/TencentSans-W3.eot');
+  src: url('../fonts/TencentSans-W3.eot?#font-spider') format('embedded-opentype'), url('../fonts/TencentSans-W3.woff') format('woff'), url('../fonts/TencentSans-W3.ttf') format('truetype'), url('../fonts/TencentSans-W3.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* TencentSansw7字体 */
+@font-face {
+  font-family: 'TencentSansw7';
+  src: url('../fonts/TencentSans-W7.eot');
+  src: url('../fonts/TencentSans-W7.eot?#font-spider') format('embedded-opentype'), url('../fonts/TencentSans-W7.woff') format('woff'), url('../fonts/TencentSans-W7.ttf') format('truetype'), url('../fonts/TencentSans-W7.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.header {
+  width: 100%;
+  height: 0;
+  transition: all 0.2s linear;
+  background-color: #fff;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+}
+.header .header-nav {
+  height: 72px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 3;
+}
+.header .header-nav .logo {
+  width: 168px;
+  height: 22px;
+  float: left;
+  margin-top: 25px;
+  background: url(../img/menu_logo.png) no-repeat;
+  background-size: contain;
+}
+.header .header-nav .logo a {
+  display: block;
+}
+.header .header-nav .logo a h1 {
+  text-indent: -9999px;
+}
+.header .header-nav .nav-list {
+  font-size: 16px;
+  position: absolute;
+  right: 220px;
+  width: 672px;
+  top: 0;
+}
+.header .header-nav .nav-list > li {
+  float: left;
+  margin-left: 72px;
+  height: 72px;
+  line-height: 72px;
+  position: relative;
+}
+.header .header-nav .nav-list > li a {
+  color: #fff;
+  font-weight: bold;
+}
+.header .header-nav .nav-list > li .line {
+  height: 4px;
+  width: 100%;
+  background-color: #194ac3;
+  margin-top: -20px;
+  transform: rotateY(90deg);
+  transition: 0.2s linear;
+}
+.header .header-nav .nav-list > li a:hover + .line {
+  transform: rotateY(0);
+}
+.header .header-nav .nav-list > li .more-list {
+  height: 370px;
+  position: absolute;
+  left: -10px;
+  z-index: 3;
+  transition: all 0.3s ease-in;
+}
+.header .header-nav .nav-list > li .more-list li {
+  font-size: 15px;
+  line-height: 50px;
+}
+.header .header-nav .nav-list > li .more-list li a {
+  color: #000;
+  opacity: 0.7;
+}
+.header .header-nav .nav-list > li .more-list li a:hover {
+  opacity: 1;
+}
+.header .header-nav .lang {
+  position: absolute;
+  right: 0;
+  top: 25px;
+  font-size: 16px;
+}
+.header .header-nav .lang .cate {
+  opacity: 0.7;
+}
+.header .header-nav .lang .current {
+  opacity: 1;
+}
+.header .header-nav .lang i {
+  font-style: italic;
+  opacity: 0.7;
+}
+.main-area {
+  height: 780px;
+  z-index: 1;
+}
+.main-area .video-box video {
+  width: 100%;
+  height: 780px;
+  margin-top: -72px;
+}
