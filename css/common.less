@@ -19,6 +19,11 @@ body {
 .head-rotate{
     transform: rotateY(90deg);
 }
+.up{
+    height: 72px;
+    background-color: #fff;
+}
+/* TencentSansw3字体 */
 @font-face {
     font-family: 'TencentSansw3';
     src: url('../fonts/TencentSans-W3.eot');
@@ -43,6 +48,7 @@ body {
     font-weight: normal;
     font-style: normal;
 }
+// 清除浮动
 .clearfix:before,
 .clearfix:after{
     content: "";
@@ -51,11 +57,11 @@ body {
 }
 .header{
     width: 100%;
-    height: 0;
+    height: 0;  //hover时的幕布
     transition: all .2s linear;
     // height: 442px;
     background-color: #fff;
-    position: fixed;
+    position: fixed; //固定定位
     z-index: 2;
     top: 0;
     .header-nav{
@@ -69,6 +75,7 @@ body {
             float: left;
             margin-top: 25px;
             background: url(../img/menu_logo.png) no-repeat;
+            transition: height .4s linear;
             background-size: contain;
             a{
                 display: block;
@@ -83,16 +90,22 @@ body {
             right: 220px;
             width: 672px;
             top: 0;
+            cursor: pointer;
             >li{
                 float: left;
                 margin-left: 72px;
                 height: 72px;
                 line-height: 72px;
                 position: relative;
-                a{
+                >a{
+                    display: block;
+                    height: 72px;
+                    line-height: 72px;
                     color: #fff;
                     // color: #000;
                     font-weight: bold;
+                    opacity: .95;
+                    transition: all .4s linear;
                 }
                 .line{
                     height: 4px;
@@ -100,23 +113,30 @@ body {
                     background-color: #194ac3;
                     margin-top: -20px;
                     transform: rotateY(90deg);
-                    transition: .2s linear;
+                    transition: all .2s ease-in-out;
                 }
                 a:hover + .line{
                     transform: rotateY(0);
                 }
                 .more-list{
-                    height: 370px;
                     position: absolute;
-                    left: -10px;
+                    margin-left: -80px;
+                    left: 50%;
+                    width: 160px;
+                    top: 72px;
                     z-index: 3;
                     transition: all .3s ease-in;
+                    display: none;
                     li{
-                        font-size: 15px;
-                        line-height: 50px;
+                        height: 48px;
                         a{
-                            color: #000;
+                            color: #2b2e2e;
+                            height: 48px;
+                            display: block;
+                            text-align: center;
+                            line-height: 48px;
                             opacity: .7;
+                            font-size: 16px;
                         }
                         a:hover{
                             opacity: 1;
