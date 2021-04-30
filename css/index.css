@@ -1,3 +1,43 @@
+@keyframes border {
+  50% {
+    width: 60px;
+  }
+  100% {
+    width: 120px;
+  }
+}
+.main-area {
+  height: 780px;
+  z-index: 1;
+  position: relative;
+}
+.main-area .video-box video {
+  width: 100%;
+  height: 780px;
+  margin-top: -72px;
+}
+.main-area .link {
+  position: absolute;
+  left: 36%;
+  z-index: 3;
+  top: 40%;
+  font-size: 54px;
+  color: #fff;
+  overflow: hidden;
+  font-family: 'TencentSansw3';
+  letter-spacing: 14px;
+}
+.main-area .link #pre {
+  margin-right: 150px;
+}
+.main-area .link #link {
+  display: inline-block;
+  position: absolute;
+  left: 136px;
+  top: -243px;
+  height: 81px;
+  transition: all 0.3s ease-in-out;
+}
 .desc-area {
   color: #5f6464;
   font-size: 24px;
@@ -18,7 +58,30 @@
 .details-area .details .item {
   width: 400px;
   height: 250px;
+  overflow: hidden;
   position: relative;
+}
+.details-area .details .item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.details-area .details .item a h3 {
+  z-index: 999;
+}
+.details-area .details .item a .border {
+  width: 120px;
+  height: 0px;
+  background-color: #fff;
+}
+.details-area .details .item a img {
+  z-index: 0;
+  background-size: cover;
+  transition: all 0.2s linear;
+}
+.details-area .details .item a img:hover {
+  transform: scale(1.02);
+  background: rgba(0, 82, 217, 0.7);
 }
 .details-area .details h3 {
   text-align: center;
@@ -28,6 +91,7 @@
   top: 50%;
   font-size: 30px;
   font-family: 'TencentSansw7';
+  color: #fff;
 }
 .details-area .details .intro {
   background: url(../img/index_detail_1.jpg);

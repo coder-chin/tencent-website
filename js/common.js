@@ -19,6 +19,7 @@ let headerChange = function(){
   });
 }
 
+//鼠标向下滚动和离开顶部导航栏
 let headerBack = function(){
   header.style.height = "0";
   logo.classList.remove('logo_hover');
@@ -30,16 +31,18 @@ let headerBack = function(){
   });
 }
 
-
+//鼠标放到顶部导航
 headNav.onmouseover = function() {
   header.style.height = "442px";
   header.style.backgroundColor = '#fff';
   headerChange();
 }
-header.onmouseout = function() {
+//鼠标离开顶部导航
+headNav.onmouseout = function() {
   headerBack();
 }
 
+//监听顶部导航每个item （控制二级菜单的展开和隐藏）
 for (let index = 0; index < lis.length; index++) {
   const element = lis[index];
   element.addEventListener('mouseover',function(){

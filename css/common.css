@@ -1,5 +1,4 @@
 body {
-  color: #fff;
   line-height: 1.5;
   font-size: 14px;
   font-family: 'PingFangSC-Regular', 'helvetica neue', tahoma, 'PingFang SC', 'microsoft yahei', arial, 'hiragino sans gb', sans-serif;
@@ -15,9 +14,6 @@ body {
 }
 .head-color {
   color: #2b2e2e !important;
-}
-.head-rotate {
-  transform: rotateY(90deg);
 }
 .up {
   height: 72px;
@@ -150,13 +146,4 @@ body {
 .header .header-nav .lang i {
   font-style: italic;
   opacity: 0.7;
-}
-.main-area {
-  height: 780px;
-  z-index: 1;
-}
-.main-area .video-box video {
-  width: 100%;
-  height: 780px;
-  margin-top: -72px;
 }
