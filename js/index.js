@@ -42,3 +42,19 @@ function timer(){
   },2000)
 }
 timer()
+
+
+//连接
+const links = document.querySelectorAll('.link-tab .item');
+const contents = document.querySelectorAll('.link-content .content');
+for(let i = 0;i<links.length;i++){
+  links[i].index = i;
+  links[i].onmouseover = function(){
+    for(let j=0; j<contents.length; j++){
+      contents[j].classList.remove('db');
+      contents[j].classList.add('dn');
+    }
+    contents[this.index].classList.remove('dn');
+    contents[this.index].classList.add('db');
+  }
+}

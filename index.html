@@ -171,7 +171,8 @@
     <!-- 视频部分 -->
     <div class="main-area">
       <div class="video-box">
-        <video src="./video/index-video.mp4" autoplay loop></video>
+        <!-- 结局自动播放被禁用的问题 muted="src"  -->
+        <video src="./video/index-video.mp4" autoplay loop muted="src"></video>
         
       </div>
       <div class="link">
@@ -221,11 +222,13 @@
     <!-- 连接 -->
     <div class="link-area">
       <div class="link">
+        <!-- 左侧三个连接 -->
         <div class="link-tab">
           <div class="item">
             <a href="#">
               <h3 class="title">连接用户与生活</h3>
               <p class='desc'>让生活更便捷更多彩</p>
+              <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
             </a>
             
           </div>
@@ -233,6 +236,7 @@
             <a href="#">
               <h3 class="title">连接企业与科技</h3>
               <p class='desc'>数字化助手，助力产业升级</p>
+              <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
             </a>
            
           </div>
@@ -240,79 +244,226 @@
             <a href="#">
               <h3 class="title">连接现在与未来</h3>
               <p class='desc'>探索面向未来的创新科技</p>
+              <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
             </a> 
           </div>
-
         </div>
+
+        <!-- 右侧具体内容 -->
         <div class="link-content">
-          <div class="life">
-            
+          <!-- 连接用户与生活 -->
+          <div class="life content">
               <li class='item1 item'>
                 <a href="#">
                   <p>社交与通信</p>
+                  <div class="desc">连接人与人，提供功能丰富的即时通信和社交平台，让沟通更便捷。</div>
                 </a>
               </li>
               <li class='item2 item'>
                 <a href="#">
                   <p>数字内容</p>
+                  <div class="desc">基于优质内容，以技术为驱动引擎，探索社交和内容融合的下一代形态。</div>
                 </a>
               </li>
               <li class='item3 item'>
                 <a href="#">
                   <p>金融科技服务</p>
+                  <div class="desc">连接用户、商户和金融机构，提供安全、专业、便捷的金融产品与服务。</div>
                 </a>
               </li>
               <li class='item4 item'>
                 <a href="#">
                   <p>工具</p>
+                  <div class="desc">提供多种工具性软件，帮助用户快速直接解决各项具体需求。</div>
                 </a>
               </li>
-      
           </div>
-          <div class="tech" style="display: none;">
+          <!-- 连接企业与科技 -->
+          <div class="tech content">
             <ul>
-              <li class='item1'>
+              <li class='item1 item'>
                 <a href="#">
                   <p>腾讯广告营销</p>
+                  <div class="desc">大数据营销平台，汇聚腾讯全量应用场景，提供一体化数字化营销方案。</div>
                 </a>
               </li>
-              <li class='item2'>
+              <li class='item2 item'>
                 <a href="#">
                   <p>腾讯云</p>
+                  <div class="desc">提供领先的云产品与云服务，辅助企业走向数字化和全球化。</div>
                 </a>
               </li>
-              <li class='item3'>
+              <li class='item3 item'>
                 <a href="#">
                   <p>智慧产业</p>
+                  <div class="desc">
+                    通过云、AI、大数据分析、安全、支付、小程序、LBS等互联网前沿技术和产品，<br>打造智慧产业方案，助力产业数字化升级。
+                  </div>
                 </a>
               </li>
             </ul>
           </div>
-          <div class="future" style="display: none;">
+          <!-- 连接现在与未来 -->
+          <div class="future content">
             <ul>
-              <li class='item1'>
+              <li class='item1 item'>
                 <a href="#">
                   <p>人工智能</p>
+                  <div class="desc">运用多种技术资产，提升人工智能实力，惠及人类和世界。</div>
                 </a>
               </li>
-              <li class='item2'>
+              <li class='item2 item'>
                 <a href="#">
                   <p>物联网</p>
+                  <div class="desc">通过腾讯云物联网，致力提供IoT全栈产品和解决方案。</div>
                 </a>
               </li>
-              <li class='item3'>
+              <li class='item3 item'>
                 <a href="#">
                   <p>多媒体</p>
+                  <div class="desc">腾讯多媒体实验室专注音视频通信技术的前瞻性研究。</div>
                 </a>
               </li>
-              <li class='item4'>
+              <li class='item4 item'>
                 <a href="#">
                   <p>腾讯探索</p>
+                  <div class="desc">携手合作伙伴探索未来和相关技术，帮助解决全球在食物、能源和水源方面的挑战。</div>
                 </a>
               </li>
 
             </ul>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 责任区域 -->
+    <div class="resp-area">
+      <div class="resp_details">
+        <h3>
+          连接<div></div>
+          责任与信任
+        </h3>
+        <p>聚合微小善行，以科技让世界更美好</p>
+        <a href="#"></a>
+      </div>
+      <div class="public_welfare">
+        <ul class="swiper">
+          <li class="slide">
+            <a href="#">
+              <h4>全球战疫 一起行动</h4>
+              <p>在新冠肺炎疫情之战中，腾讯秉持科技向善，以互联网科技的力量，通过我们的技术和产品为全球战疫提供支持。</p>
+              <div class="img img1"></div>
+            </a>
+          </li>
+          <li class="slide" style="display: none;">
+            <a href="#">
+              <h4>99 公益日</h4>
+              <p>每年一度于9月举行的全民公益活动，透过网上平台将大众在活动期间网上作出的捐款进行匹配。</p>
+              <div class="img img2"></div>
+            </a>
+          </li>
+          <li class="slide" style="display: none;">
+            <a href="#">
+              <h4>腾讯长城保护项目</h4>
+              <p>腾讯公益慈善基金会与中国文物保护基金会共同合作，吸引公众关注和参与长城保护的文化遗产类公益项目。</p>
+              <div class="img img3"></div>
+            </a>
+          </li>
+          <li class="slide" style="display: none;">
+            <a href="#">
+              <h4>腾讯为村</h4>
+              <p>根据乡村使用场景定制微信公众号，形成由村、乡镇、区县、州市组成的公众号集群服务村民，打造手机上的“为村服务中心”。</p>
+              <div class="img img4"></div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 发展区域 -->
+    <div class="develop-area">
+      <div class="swiper">
+        <div class="swiper-list">
+          <li>
+            <a href="#" class="li1"></a>
+          </li>
+          <li style="display: none;">
+            <a href="#" class="li2"></a>
+          </li>
+          <li style="display: none;">
+            <a href="#" class="li3"></a>
+          </li>
+        </div>
+        <div class="swiper-tab"></div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="core">
+        <div class="focus_us">
+          <h3>关注我们</h3>
+          <ul>
+            <li>
+              <a href="#">
+                <i class="wechat"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="weibo"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="join_us item">
+          <h3>加入我们</h3>
+          <div class="join_list">
+            <li>社会招聘</li>
+            <li>校园招聘</li>
+            <li>国际招聘</li>
+          </div>
+        </div>
+        <div class="contact_us item">
+          <h3>联系我们</h3>
+          <div class="contact_list">
+            <li>客户服务</li>
+            <li>合作洽谈</li>
+            <li>腾讯采购</li>
+            <li>媒体及投资者</li>
+          </div>
+        </div>
+        <div class="legal_info item">
+          <h3>法律信息</h3>
+          <div class="legal_list">
+            <li>服务协议</li>
+            <li>隐私政策</li>
+            <li>知识产权</li>
+          </div>
+        </div>
+        <div class="logo">
+          <img src="https://www.tencent.com/img/index/tencent_logo.png" alt="">
+        </div>
+        <div class="footer_area">
+          <ul class="links">
+            <li>法律声明</li>
+            <li>阳光准则</li>
+            <li>网站地图</li>
+            <li>粤网文【2017】6138-1456号</li>
+            <li>粤B2-20090059-1</li>
+          </ul>
+          <p class="copyright">
+            Copyright © 1998 - 2021 Tencent. All Rights Reserved.
+          </p>
         </div>
       </div>
     </div>

@@ -1,3 +1,4 @@
+@import url(../fonts/fa/css/font-awesome.css);
 @keyframes border {
   50% {
     width: 60px;
@@ -5,6 +6,12 @@
   100% {
     width: 120px;
   }
+}
+.db {
+  display: block !important;
+}
+.dn {
+  display: none !important;
 }
 .intro_hover {
   transition: all 0.5s linear;
@@ -42,7 +49,7 @@
   font-size: 54px;
   color: #fff;
   overflow: hidden;
-  font-family: 'TencentSansw3';
+  font-family: "TencentSansw3";
   letter-spacing: 14px;
 }
 .main-area .link #pre {
@@ -61,7 +68,7 @@
   font-size: 24px;
   line-height: 54px;
   text-align: center;
-  font-family: 'TencentSansw3';
+  font-family: "TencentSansw3";
   padding: 74px 0;
 }
 .details-area {
@@ -94,7 +101,7 @@
 .details-area .details .item a h3::after {
   width: 0px;
   height: 3px;
-  content: '';
+  content: "";
   display: block;
   background-color: #fff;
   position: absolute;
@@ -112,7 +119,7 @@
   transform: translateX(-50%) translateY(-50%);
   top: 50%;
   font-size: 30px;
-  font-family: 'TencentSansw7';
+  font-family: "TencentSansw7";
   color: #fff;
 }
 .details-area .details .intro {
@@ -126,6 +133,7 @@
 }
 .link-area {
   background: #1b1f25;
+  margin-bottom: 84px;
 }
 .link-area .link {
   width: 1440px;
@@ -141,43 +149,60 @@
   height: 33.3%;
   position: relative;
 }
-.link-area .link .link-tab .item .title {
+.link-area .link .link-tab .item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.link-area .link .link-tab .item a:hover > i {
+  display: block;
+}
+.link-area .link .link-tab .item a .title {
   position: absolute;
   font-size: 30px;
-  font-family: 'TencentSansw7';
+  font-family: "TencentSansw7";
   top: 30%;
   left: 30%;
 }
-.link-area .link .link-tab .item .desc {
+.link-area .link .link-tab .item a .desc {
   position: absolute;
   font-size: 16px;
-  font-family: 'TencentSansw7';
+  font-family: "TencentSansw7";
   top: 50%;
   left: 30%;
+}
+.link-area .link .link-tab .item a i {
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  color: #fff !important;
+  font-size: 50px;
+  font-weight: 100;
+  line-height: 30px;
 }
 .link-area .link .link-content {
   width: 64%;
   height: 100%;
   float: left;
 }
-.link-area .link .link-content .life {
+.link-area .link .link-content .content {
   height: 100%;
 }
-.link-area .link .link-content .life .item {
+.link-area .link .link-content .content .item {
   width: 50%;
   height: 50%;
   float: left;
 }
-.link-area .link .link-content .life .item a {
+.link-area .link .link-content .content .item a {
   display: inline-block;
   width: 100%;
   height: 100%;
 }
-.link-area .link .link-content .life .item a p {
+.link-area .link .link-content .content .item a p {
   margin-left: 43px;
   margin-top: 310px;
   font-size: 20px;
-  font-family: 'TencentSansw7';
+  font-family: "TencentSansw7";
 }
 .link-area .link .link-content .life .item1 {
   background-image: url(https://www.tencent.com/data/index/index_link_1_1.jpg);
@@ -190,4 +215,255 @@
 }
 .link-area .link .link-content .life .item4 {
   background-image: url(https://www.tencent.com/data/index/index_link_1_4.jpg);
+}
+.link-area .link .link-content .tech {
+  display: none;
+}
+.link-area .link .link-content .tech .item1 {
+  background-image: url(https://www.tencent.com/data/index/index_link_2_1.jpg);
+}
+.link-area .link .link-content .tech .item2 {
+  background-image: url(https://www.tencent.com/data/index/index_link_2_2.jpg);
+}
+.link-area .link .link-content .tech .item3 {
+  background-image: url(https://www.tencent.com/data/index/index_link_2_3.jpg);
+  width: 100%;
+}
+.link-area .link .link-content .future {
+  display: none;
+}
+.link-area .link .link-content .future .item1 {
+  background-image: url(https://www.tencent.com/data/index/index_link_3_1.jpg);
+}
+.link-area .link .link-content .future .item2 {
+  background-image: url(https://www.tencent.com/data/index/index_link_3_2.jpg);
+}
+.link-area .link .link-content .future .item3 {
+  background-image: url(https://www.tencent.com/data/index/index_link_3_3.jpg);
+}
+.link-area .link .link-content .future .item4 {
+  background-image: url(https://www.tencent.com/data/index/index_link_3_4.jpg);
+}
+.resp-area {
+  width: 1280px;
+  height: 620px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 84px;
+}
+.resp-area .resp_details {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+}
+.resp-area .resp_details h3 {
+  font-size: 36px;
+  color: #2a2e2e;
+  font-family: "TencentSansw7";
+  margin-bottom: 20px;
+}
+.resp-area .resp_details p {
+  color: #5f6464;
+  font-size: 20px;
+}
+.resp-area .resp_details a {
+  display: block;
+  margin: 30px 0;
+  width: 100px;
+  height: 23px;
+  background-image: url(../img/arrow.png);
+  background-size: contain;
+}
+.resp-area .public_welfare {
+  width: 627px;
+  height: 620px;
+}
+.resp-area .public_welfare .swiper {
+  width: 100%;
+  height: 100%;
+}
+.resp-area .public_welfare .swiper .slide {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.resp-area .public_welfare .swiper .slide a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.resp-area .public_welfare .swiper .slide a h4 {
+  position: absolute;
+  width: 500px;
+  height: 36px;
+  font-size: 24px;
+  left: 53px;
+  bottom: 107px;
+  font-family: "TencentSansw7";
+}
+.resp-area .public_welfare .swiper .slide a p {
+  position: absolute;
+  width: 500px;
+  font-size: 16px;
+  left: 52px;
+  bottom: 41px;
+  line-height: 29px;
+  font-family: "TencentSansw7";
+}
+.resp-area .public_welfare .swiper .slide a .img {
+  width: 100%;
+  height: 100%;
+}
+.resp-area .public_welfare .swiper .slide a .img1 {
+  background-image: url(https://www.tencent.com/data/index/index_resp_bg0.png);
+}
+.resp-area .public_welfare .swiper .slide a .img2 {
+  background-image: url(https://www.tencent.com/data/index/index_resp_bg1.png);
+}
+.resp-area .public_welfare .swiper .slide a .img3 {
+  background-image: url(https://www.tencent.com/data/index/index_resp_bg2.png);
+}
+.resp-area .public_welfare .swiper .slide a .img4 {
+  background-image: url(https://www.tencent.com/data/index/index_resp_bg3.png);
+}
+.develop-area {
+  display: block;
+  width: 100%;
+  height: 1040px;
+}
+.develop-area .swiper {
+  width: 100%;
+  height: 100%;
+}
+.develop-area .swiper .swiper-list {
+  width: 100%;
+  height: 100%;
+}
+.develop-area .swiper .swiper-list li {
+  width: 100%;
+  height: 100%;
+}
+.develop-area .swiper .swiper-list li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.develop-area .swiper .swiper-list li .li1 {
+  background-image: url(https://www.tencent.com/data/index/index_develop_bg1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.develop-area .swiper .swiper-list li .li2 {
+  background-image: url(https://www.tencent.com/data/index/index_develop_bg2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.develop-area .swiper .swiper-list li .li3 {
+  background-image: url(https://www.tencent.com/data/index/index_develop_bg3.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.footer {
+  width: 100%;
+  height: 480px;
+}
+.footer .core {
+  width: 1200px;
+  height: 480px;
+  margin: 0 auto;
+  position: relative;
+}
+.footer .core .item {
+  color: #5f6464;
+  width: 216px;
+}
+.footer .core .item li {
+  display: block;
+  width: 216px;
+  height: 24px;
+  margin-bottom: 18px;
+  font-size: 16px;
+}
+.footer .core .item h3 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.footer .core .focus_us {
+  height: 55px;
+  padding-top: 33px;
+  margin-bottom: 40px;
+}
+.footer .core .focus_us h3 {
+  float: left;
+  font-size: 20px;
+  color: #5f6464;
+  width: 80px;
+  height: 30px;
+  margin: 0 33px 30px 0;
+}
+.footer .core .focus_us ul li {
+  float: left;
+  width: 28px;
+  height: 46px;
+  margin-right: 28px;
+}
+.footer .core .focus_us ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.footer .core .focus_us ul li a i {
+  display: block;
+  width: 28px;
+  height: 28px;
+}
+.footer .core .focus_us ul li a .wechat {
+  background: url(../img/icon_wechat.png) no-repeat;
+  background-size: 100% 100%;
+}
+.footer .core .focus_us ul li a .weibo {
+  background: url(../img/icon_weibo.png) no-repeat center;
+  background-size: 100% 100%;
+}
+.footer .core .focus_us ul li a .twitter {
+  background: url(../img/icon_twitter.png) no-repeat center;
+  background-size: 100% 100%;
+}
+.footer .core .focus_us ul li a .in {
+  background: url(../img/icon_in.png) no-repeat center;
+  background-size: 100% 100%;
+}
+.footer .core .join_us {
+  float: left;
+}
+.footer .core .contact_us {
+  float: left;
+}
+.footer .core .legal_info {
+  float: left;
+}
+.footer .core .logo {
+  float: right;
+  width: 212px;
+  height: 28px;
+  position: absolute;
+  top: 50%;
+  right: 75px;
+}
+.footer .core .logo img {
+  width: 100%;
+}
+.footer .core .footer_area {
+  position: absolute;
+  bottom: 51px;
+  width: 100%;
+  display: flex;
+}
+.footer .core .footer_area .links {
+  display: flex;
+}
+.footer .core .footer_area p {
+  display: inline-block;
+  position: absolute;
+  right: 0;
 }
