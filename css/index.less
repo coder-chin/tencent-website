@@ -35,6 +35,14 @@
   background: rgba(0, 82, 217, 0.7) url(../img/index_detail_3.jpg);
   transform: scale(1.01);
 }
+.current{
+  opacity: 1!important;
+  transform: translateX(20px);
+  transition: opacity .3s ease-out,transform .3s ease-in-out;
+}
+.change_op{
+  opacity: 1!important;
+}
 .main-area {
   height: 780px;
   z-index: 1;
@@ -161,31 +169,49 @@
           display: block;
           width: 100%;
           height: 100%;
-          &:hover > i {
+          opacity: 0.3;
+          
+          font-family: "TencentSansw7";
+          // &:hover > i {
+          //   display: block;
+          // }
+          &:hover::after{
+            opacity: 1;
+          }
+          .line{
             display: block;
+            content: "";
+            position: absolute;
+            left: 26%;
+            top: 33%;
+            width: 6px;
+            height: 70px;
+            opacity: 0;
+            background-color: #1e52d8;
           }
           .title {
             position: absolute;
             font-size: 30px;
-            font-family: "TencentSansw7";
             top: 30%;
             left: 30%;
           }
           .desc {
             position: absolute;
             font-size: 16px;
-            font-family: "TencentSansw7";
             top: 50%;
             left: 30%;
+            font-weight: 100;
           }
           i {
             position: absolute;
             top: 60%;
             left: 30%;
+            width: 50px;
+            height: 50px;
             color: #fff !important;
-            font-size: 50px;
-            font-weight: 100;
-            line-height: 30px;
+            background-image: url(../img/whitearrow.png);
+            background-size: contain;
+            display: none;
           }
         }
       }
@@ -205,10 +231,29 @@
             width: 100%;
             height: 100%;
             p {
-              margin-left: 43px;
-              margin-top: 310px;
-              font-size: 20px;
+              width: 80%;
+              padding: 0 10%;
+              margin-top: 290px;
+              font-size: 24px;
               font-family: "TencentSansw7";
+              transition: all .3s ease-out;
+            }
+            &:hover > .desc{
+              opacity: 1;
+              transform: translateY(-30px);
+            }
+            &:hover > p{
+              transform: translateY(-30px);
+            }
+            .desc{
+              width: 80%;
+              overflow: hidden;
+              padding: 0 10%;
+              font-size: 16px;
+              line-height: 1.8;
+              opacity: 0;
+              font-family: 'TencentSansw3';
+              transition: transform .3s ease-out;
             }
           }
         }

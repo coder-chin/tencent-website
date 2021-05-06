@@ -27,6 +27,7 @@ details[2].addEventListener('mouseout', function () {
   details[2].classList.remove('location_hover');
 })
 
+//视频上面滚动的文字
 function timer(){
   var top = -243;
   var timer = setInterval(function(){
@@ -44,12 +45,28 @@ function timer(){
 timer()
 
 
-//连接
-const links = document.querySelectorAll('.link-tab .item');
+//连接hover
+const links = document.querySelectorAll('.link-tab .item a');
+const is = document.querySelectorAll('.link-tab .item a i');
+const lines = document.querySelectorAll('.link-tab .item a .line');
 const contents = document.querySelectorAll('.link-content .content');
 for(let i = 0;i<links.length;i++){
   links[i].index = i;
   links[i].onmouseover = function(){
+    for(let j=0;j<links.length;j++){
+      links[j].classList.remove('current');
+    }
+    for(let j=0;j<links.length;j++){
+      is[j].classList.remove('db');
+    }
+    for(let j=0;j<lines.length;j++){
+      lines[j].classList.remove('change_op');
+    }
+    lines[this.index].classList.add('change_op');
+    this.classList.add('current');
+
+    const i = this.getElementsByTagName('i')[0];
+    i.classList.add('db'); 
     for(let j=0; j<contents.length; j++){
       contents[j].classList.remove('db');
       contents[j].classList.add('dn');
