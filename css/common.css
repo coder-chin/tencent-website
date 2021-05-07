@@ -8,9 +8,8 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
-.logo_hover {
-  background-image: url(../img/menu_logo_hover.png) !important;
-  background-size: contain;
+.logo_a {
+  color: #194ac3;
 }
 .head-color {
   color: #2b2e2e !important;
@@ -57,19 +56,18 @@ body {
   z-index: 999;
 }
 .header .header-nav .logo {
-  width: 168px;
+  width: 240px;
   height: 22px;
   float: left;
-  margin-top: 25px;
-  background: url(../img/menu_logo.png) no-repeat;
+  margin-top: 15px;
   transition: height 0.4s linear;
   background-size: contain;
 }
 .header .header-nav .logo a {
   display: block;
-}
-.header .header-nav .logo a h1 {
-  text-indent: -9999px;
+  color: #fff;
+  font-size: 30px;
+  font-family: 'TencentSansw7';
 }
 .header .header-nav .nav-list {
   font-size: 16px;

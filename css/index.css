@@ -368,9 +368,8 @@
   background-image: url(https://www.tencent.com/data/index/index_resp_bg3.png);
 }
 .develop-area {
-  display: block;
   width: 100%;
-  height: 1040px;
+  height: 51vw;
 }
 .develop-area .swiper {
   width: 100%;
