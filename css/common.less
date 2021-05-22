@@ -1,166 +1,166 @@
-body {
-    line-height: 1.5;
-    font-size: 14px;
-    font-family: 'PingFangSC-Regular', 'helvetica neue', tahoma, 'PingFang SC', 'microsoft yahei', arial, 'hiragino sans gb', sans-serif;
-    -webkit-font-smoothing: antialiased;
-}
-.w{
-    width: 1200px;
-    margin: 0 auto;
-}
-
-//logo变化
-.logo_a{
-    color: #194ac3;
-}
-//顶部字体颜色变化
-.head-color{
-    color: #2b2e2e!important;
-}
-//6个导航item下面的蓝色区域
-
-.up{
-    height: 72px;
-    background-color: #fff;
-}
 /* TencentSansw3字体 */
 @font-face {
-    font-family: 'TencentSansw3';
-    src: url('../fonts/TencentSans-W3.eot');
-    src:
-        url('../fonts/TencentSans-W3.eot?#font-spider') format('embedded-opentype'),
-        url('../fonts/TencentSans-W3.woff') format('woff'),
-        url('../fonts/TencentSans-W3.ttf') format('truetype'),
-        url('../fonts/TencentSans-W3.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "TencentSansw3";
+  src: url("../fonts/TencentSans-W3.eot");
+  src: url("../fonts/TencentSans-W3.eot?#font-spider")
+      format("embedded-opentype"),
+    url("../fonts/TencentSans-W3.woff") format("woff"),
+    url("../fonts/TencentSans-W3.ttf") format("truetype"),
+    url("../fonts/TencentSans-W3.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* TencentSansw7字体 */
 @font-face {
-    font-family: 'TencentSansw7';
-    src: url('../fonts/TencentSans-W7.eot');
-    src:
-        url('../fonts/TencentSans-W7.eot?#font-spider') format('embedded-opentype'),
-        url('../fonts/TencentSans-W7.woff') format('woff'),
-        url('../fonts/TencentSans-W7.ttf') format('truetype'),
-        url('../fonts/TencentSans-W7.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "TencentSansw7";
+  src: url("../fonts/TencentSans-W7.eot");
+  src: url("../fonts/TencentSans-W7.eot?#font-spider")
+      format("embedded-opentype"),
+    url("../fonts/TencentSans-W7.woff") format("woff"),
+    url("../fonts/TencentSans-W7.ttf") format("truetype"),
+    url("../fonts/TencentSans-W7.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
+
+//logo变化
+.logo_a {
+  color: #194ac3!important;
+}
+//顶部字体颜色变化
+.head-color {
+  color: #2b2e2e !important;
+}
+
+// 滚轮向上滚动的时候
+.up {
+  height: 72px;
+  background-color: #fff;
+}
+
 // 清除浮动
 .clearfix:before,
-.clearfix:after{
-    content: "";
-    display: table;
-    clear: both;
+.clearfix:after {
+  content: ""; //伪类必须写content，否则不起作用
+  display: table;
+  clear: both;
+}
+
+body {
+  line-height: 1.5;
+  font-size: 14px;
+  font-family: "PingFangSC-Regular", "helvetica neue", tahoma, "PingFang SC",
+    "microsoft yahei", arial, "hiragino sans gb", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 //顶部
-.header{
-    width: 100%;
-    height: 0;  //hover时的幕布
-    transition: all .2s linear;
-    // height: 442px;
-    background-color: #fff;
-    position: fixed; //固定定位
-    z-index: 2;
-    top: 0;
-    .header-nav{
-        height: 72px;
-        box-sizing: border-box;
-        position: relative; 
-        z-index: 999;
-        .logo{   //logo
-            width: 240px;
-            height: 22px;
-            float: left;
-            margin-top: 15px;
-            transition: height .4s linear;
-            background-size: contain;
-            a{
-                display: block;
-                color: #fff;
-                font-size: 30px;
-                font-family: 'TencentSansw7';
-            }
-        }
-        .nav-list{   //导航区域
-            font-size: 16px;
-            position: absolute;
-            right: 220px;
-            width: 672px;
-            top: 0;
-            cursor: pointer;
-            >li{
-                float: left;
-                margin-left: 72px;
-                height: 72px;
-                line-height: 72px;
-                position: relative;
-                >a{
-                    display: block;
-                    height: 72px;
-                    line-height: 72px;
-                    color: #fff;
-                    // color: #000;
-                    font-weight: bold;
-                    opacity: .95;
-                    transition: all .4s linear;
-                }
-                .line{
-                    height: 4px;
-                    width: 100%;
-                    background-color: #194ac3;
-                    margin-top: -20px;
-                    transform: rotateY(90deg);
-                    transition: all .2s ease-in-out;
-                }
-                a:hover + .line{
-                    transform: rotateY(0);
-                }
-                .more-list{
-                    position: absolute;
-                    margin-left: -80px;
-                    left: 50%;
-                    width: 160px;
-                    top: 72px;
-                    z-index: 3;
-                    transition: all .3s ease-in;
-                    display: none;
-                    li{
-                        height: 48px;
-                        a{
-                            color: #2b2e2e;
-                            height: 48px;
-                            display: block;
-                            text-align: center;
-                            line-height: 48px;
-                            opacity: .7;
-                            font-size: 16px;
-                        }
-                        a:hover{
-                            opacity: 1;
-                        }
-                    }
-                }
-            }
-        }
-        .lang{
-            position: absolute;
-            right: 0;
-            top: 25px;
-            font-size: 16px;
-            .cate{
-                opacity: 0.7;
-                
-            }
-            .current{
-                opacity: 1;
-            }
-            i{
-                font-style: italic;
-                opacity: .7;
-            }
-        }
+.header {
+  width: 100%;
+  height: 0; //hover时的幕布
+  transition: all 0.2s linear;
+  background-color: #fff;
+  position: fixed; //固定定位
+  top: 0;
+  z-index: 2;
+
+  .header-nav {
+    height: 72px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 999;
+    width: 1200px;
+    margin: 0 auto; //居中
+    .logo {
+      //logo
+      width: 240px;
+      height: 45px;
+      float: left;
+      margin-top: 10px;
+      a {
+        display: block;
+        color: #fff;
+        font-size: 30px;
+        font-family: "TencentSansw7";
+      }
     }
+    .nav-list {
+      //导航区域
+      font-size: 16px;
+      position: absolute;
+      right: 220px;
+      width: 672px;
+      top: 0;
+      cursor: pointer;
+      > li {
+        float: left;
+        margin-left: 72px;
+        height: 72px;
+        line-height: 72px;
+        position: relative;
+        > a {
+          display: block;
+          height: 72px;
+          line-height: 72px;
+          color: #fff;
+          // color: #000;
+          font-weight: bold;
+          opacity: 0.95;
+          transition: all 0.4s linear;
+        }
+        .line {
+          height: 4px;
+          width: 100%;
+          background-color: #194ac3;
+          margin-top: -20px;
+          transform: rotateY(90deg);
+          transition: all 0.2s ease-in-out;
+        }
+        a:hover + .line {
+          transform: rotateY(0);
+        }
+        .more-list {
+          position: absolute;
+          margin-left: -80px;
+          left: 50%;
+          width: 160px;
+          top: 72px;
+          z-index: 3;
+          transition: all 0.3s ease-in;
+          display: none;
+          li {
+            height: 48px;
+            a {
+              color: #2b2e2e;
+              height: 48px;
+              display: block;
+              text-align: center;
+              line-height: 48px;
+              opacity: 0.7;
+              font-size: 16px;
+            }
+            a:hover {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+    .lang {
+      position: absolute;
+      right: 0;
+      top: 25px;
+      font-size: 16px;
+      .cate {
+        opacity: 0.7;
+      }
+      .current {
+        opacity: 1;
+      }
+      i {
+        font-style: italic;
+        opacity: 0.7;
+      }
+    }
+  }
 }
