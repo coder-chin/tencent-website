@@ -3,4 +3,5 @@
 ![image-20210522200117814](note.assets/image-20210522200117814.png)
 
 - a标签中加入href='javascript:;会取消默认行为'
+- obj.offsetWidth获取宽度
 - 
