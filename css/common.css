@@ -43,7 +43,7 @@ body {
   background-color: #fff;
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 999;
 }
 .header .header-nav {
   height: 72px;

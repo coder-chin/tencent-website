@@ -7,6 +7,9 @@
     width: 120px;
   }
 }
+.swiper_dot {
+  background-color: #1e52d8 !important;
+}
 .db {
   display: block !important;
 }
@@ -372,34 +375,70 @@
 .develop-area .swiper {
   width: 100%;
   height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.develop-area .swiper .arrow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  font-size: 30px;
+  color: #fff;
+  display: none;
+}
+.develop-area .swiper .arrow .left {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 50px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+.develop-area .swiper .arrow .right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 50px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
 }
 .develop-area .swiper .swiper-list {
-  width: 100%;
+  width: 500%;
   height: 100%;
+  position: absolute;
 }
 .develop-area .swiper .swiper-list li {
-  width: 100%;
-  height: 100%;
+  float: left;
 }
 .develop-area .swiper .swiper-list li a {
   display: block;
-  width: 100%;
+  width: 100vw;
   height: 100%;
 }
-.develop-area .swiper .swiper-list li .li1 {
-  background-image: url(https://www.tencent.com/data/index/index_develop_bg1.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
+.develop-area .swiper .swiper-list li a img {
+  width: 100%;
 }
-.develop-area .swiper .swiper-list li .li2 {
-  background-image: url(https://www.tencent.com/data/index/index_develop_bg2.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
+.develop-area .swiper .circle {
+  z-index: 9;
+  position: absolute;
+  bottom: 10px;
+  right: 30px;
 }
-.develop-area .swiper .swiper-list li .li3 {
-  background-image: url(https://www.tencent.com/data/index/index_develop_bg3.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
+.develop-area .swiper .circle li {
+  float: left;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background-color: #fff;
+  cursor: pointer;
 }
 .footer {
   width: 100%;
