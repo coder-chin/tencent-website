@@ -81,6 +81,7 @@
     }
   }
 }
+
 //描述区域
 .desc-area {
   color: #5f6464;
@@ -174,11 +175,7 @@
           width: 100%;
           height: 100%;
           opacity: 0.3;
-          
           font-family: "TencentSansw7";
-          // &:hover > i {
-          //   display: block;
-          // }
           &:hover::after{
             opacity: 1;
           }
@@ -224,89 +221,88 @@
       width: 64%;
       height: 100%;
       float: left;
-      .content {
+      .content{
         height: 100%;
+        width: 100%;
         .item {
           width: 50%;
           height: 50%;
           float: left;
+          position: relative;
           a {
-            display: inline-block;
+            display: block;
             width: 100%;
-            height: 100%;
+            height: 390px;
+            position: relative;
             p {
+              position: absolute;
               width: 80%;
-              padding: 0 10%;
-              margin-top: 290px;
+              padding: 1% 10%;
               font-size: 24px;
+              bottom: 40px;
               font-family: "TencentSansw7";
-              transition: all .3s ease-out;
-            }
-            &:hover > .desc{
-              opacity: 1;
-              transform: translateY(-30px);
-            }
-            &:hover > p{
-              transform: translateY(-30px);
             }
             .desc{
               width: 80%;
+              position: absolute;
+              bottom: 0;
               overflow: hidden;
               padding: 0 10%;
               font-size: 16px;
               line-height: 1.8;
               opacity: 0;
               font-family: 'TencentSansw3';
-              transition: transform .3s ease-out;
             }
           }
         }
       }
       .life {
         .item1 {
-          background-image: url(https://www.tencent.com/data/index/index_link_1_1.jpg);
+          background: url(https://www.tencent.com/data/index/index_link_1_1.jpg);
         }
         .item2 {
-          background-image: url(https://www.tencent.com/data/index/index_link_1_2.jpg);
+          background: url(https://www.tencent.com/data/index/index_link_1_2.jpg);
         }
         .item3 {
-          background-image: url(https://www.tencent.com/data/index/index_link_1_3.jpg);
+          background: url(https://www.tencent.com/data/index/index_link_1_3.jpg);
         }
         .item4 {
-          background-image: url(https://www.tencent.com/data/index/index_link_1_4.jpg);
+          background: url(https://www.tencent.com/data/index/index_link_1_4.jpg);
         }
       }
       .tech {
         display: none;
         .item1 {
-          background-image: url(https://www.tencent.com/data/index/index_link_2_1.jpg);
+          background: url(https://www.tencent.com/data/index/index_link_2_1.jpg);
         }
         .item2 {
-          background-image: url(https://www.tencent.com/data/index/index_link_2_2.jpg);
+          background: url(https://www.tencent.com/data/index/index_link_2_2.jpg);
         }
         .item3 {
-          background-image: url(https://www.tencent.com/data/index/index_link_2_3.jpg);
+          background: url(https://www.tencent.com/data/index/index_link_2_3.jpg);
           width: 100%;
         }
       }
       .future {
         display: none;
         .item1 {
-          background-image: url(https://www.tencent.com/data/index/index_link_3_1.jpg);
+          background: url(https://www.tencent.com/data/index/index_link_3_1.jpg);
         }
         .item2 {
-          background-image: url(https://www.tencent.com/data/index/index_link_3_2.jpg);
+          background: url(https://www.tencent.com/data/index/index_link_3_2.jpg);
         }
         .item3 {
-          background-image: url(https://www.tencent.com/data/index/index_link_3_3.jpg);
+          background: url(https://www.tencent.com/data/index/index_link_3_3.jpg);
         }
         .item4 {
-          background-image: url(https://www.tencent.com/data/index/index_link_3_4.jpg);
+          background: url(https://www.tencent.com/data/index/index_link_3_4.jpg);
         }
       }
     }
   }
 }
+
+//责任区域
 .resp-area {
   width: 1280px;
   height: 620px;
@@ -389,6 +385,8 @@
     }
   }
 }
+
+//发展区域
 .develop-area {
   width: 100%;
   height: 51vw;
@@ -425,6 +423,8 @@
     }
   }
 }
+
+//底部
 .footer {
   width: 100%;
   height: 480px;

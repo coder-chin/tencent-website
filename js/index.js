@@ -1,6 +1,25 @@
 const link = document.getElementById('link');
 const details = document.querySelectorAll('.details-area .details .item');
 
+
+//连接区域右侧，鼠标移入时文字上移
+var link_items = document.querySelectorAll(
+  ".link-area .link .link-content .content .item a"
+);
+
+link_items.forEach(item => {
+  item.onmouseenter = function(){
+    animate(this.children[0],250)
+    animate(this.children[1],300)
+    this.children[1].style.opacity = '1'
+  }
+  item.onmouseleave = function(){
+    animate(this.children[0],305)
+    animate(this.children[1],334)
+    this.children[1].style.opacity = '0'
+  }
+})
+
 details[0].addEventListener('mouseover',function(){
   details[0].classList.remove('intro');
   details[0].classList.add('intro_hover');

@@ -210,81 +210,78 @@
 }
 .link-area .link .link-content .content {
   height: 100%;
+  width: 100%;
 }
 .link-area .link .link-content .content .item {
   width: 50%;
   height: 50%;
   float: left;
+  position: relative;
 }
 .link-area .link .link-content .content .item a {
-  display: inline-block;
+  display: block;
   width: 100%;
-  height: 100%;
+  height: 390px;
+  position: relative;
 }
 .link-area .link .link-content .content .item a p {
+  position: absolute;
   width: 80%;
-  padding: 0 10%;
-  margin-top: 290px;
+  padding: 1% 10%;
   font-size: 24px;
+  bottom: 40px;
   font-family: "TencentSansw7";
-  transition: all 0.3s ease-out;
-}
-.link-area .link .link-content .content .item a:hover > .desc {
-  opacity: 1;
-  transform: translateY(-30px);
-}
-.link-area .link .link-content .content .item a:hover > p {
-  transform: translateY(-30px);
 }
 .link-area .link .link-content .content .item a .desc {
   width: 80%;
+  position: absolute;
+  bottom: 0;
   overflow: hidden;
   padding: 0 10%;
   font-size: 16px;
   line-height: 1.8;
   opacity: 0;
   font-family: 'TencentSansw3';
-  transition: transform 0.3s ease-out;
 }
 .link-area .link .link-content .life .item1 {
-  background-image: url(https://www.tencent.com/data/index/index_link_1_1.jpg);
+  background: url(https://www.tencent.com/data/index/index_link_1_1.jpg);
 }
 .link-area .link .link-content .life .item2 {
-  background-image: url(https://www.tencent.com/data/index/index_link_1_2.jpg);
+  background: url(https://www.tencent.com/data/index/index_link_1_2.jpg);
 }
 .link-area .link .link-content .life .item3 {
-  background-image: url(https://www.tencent.com/data/index/index_link_1_3.jpg);
+  background: url(https://www.tencent.com/data/index/index_link_1_3.jpg);
 }
 .link-area .link .link-content .life .item4 {
-  background-image: url(https://www.tencent.com/data/index/index_link_1_4.jpg);
+  background: url(https://www.tencent.com/data/index/index_link_1_4.jpg);
 }
 .link-area .link .link-content .tech {
   display: none;
 }
 .link-area .link .link-content .tech .item1 {
-  background-image: url(https://www.tencent.com/data/index/index_link_2_1.jpg);
+  background: url(https://www.tencent.com/data/index/index_link_2_1.jpg);
 }
 .link-area .link .link-content .tech .item2 {
-  background-image: url(https://www.tencent.com/data/index/index_link_2_2.jpg);
+  background: url(https://www.tencent.com/data/index/index_link_2_2.jpg);
 }
 .link-area .link .link-content .tech .item3 {
-  background-image: url(https://www.tencent.com/data/index/index_link_2_3.jpg);
+  background: url(https://www.tencent.com/data/index/index_link_2_3.jpg);
   width: 100%;
 }
 .link-area .link .link-content .future {
   display: none;
 }
 .link-area .link .link-content .future .item1 {
-  background-image: url(https://www.tencent.com/data/index/index_link_3_1.jpg);
+  background: url(https://www.tencent.com/data/index/index_link_3_1.jpg);
 }
 .link-area .link .link-content .future .item2 {
-  background-image: url(https://www.tencent.com/data/index/index_link_3_2.jpg);
+  background: url(https://www.tencent.com/data/index/index_link_3_2.jpg);
 }
 .link-area .link .link-content .future .item3 {
-  background-image: url(https://www.tencent.com/data/index/index_link_3_3.jpg);
+  background: url(https://www.tencent.com/data/index/index_link_3_3.jpg);
 }
 .link-area .link .link-content .future .item4 {
-  background-image: url(https://www.tencent.com/data/index/index_link_3_4.jpg);
+  background: url(https://www.tencent.com/data/index/index_link_3_4.jpg);
 }
 .resp-area {
   width: 1280px;
