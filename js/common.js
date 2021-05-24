@@ -53,6 +53,7 @@ var scrollFunc = function (e) {
   } 
 }
 
+window.addEventListener("wheel", scrollFunc)    //window监听
 
 //鼠标放到顶部导航触发事件
 headNav.onmouseover = function() {
@@ -78,5 +79,4 @@ for (let index = 0; index < lis.length; index++) {
 
 
 
-window.addEventListener("wheel", scrollFunc)    //window监听
 
